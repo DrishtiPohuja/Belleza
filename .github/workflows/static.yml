@@ -38,10 +38,7 @@ jobs:
         with:
           # Upload entire repository
           path: '.'
-      - name: Build project
-        run: npm run build  
-        env:
-          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+      
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
