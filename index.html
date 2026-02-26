@@ -794,11 +794,12 @@
                 loadingMsg.remove();
                 sendBtn.disabled = false;
 
-                if (data.candidates && data.candidates[0].content) {
+                if (response.ok && data.candidates && data.candidates[0].content) {
                     const reply = data.candidates[0].content.parts[0].text;
                     const formattedReply = reply.replace(/\n/g, '<br>');
                     appendBotMessage(formattedReply);
                 } else {
+                    console.error('Gemini API Error:', data);
                     appendBotMessage("I apologize, but I am currently unable to connect to the network. Please try again later or call us directly on 9819020670. ✨");
                 }
 
