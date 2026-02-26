@@ -619,7 +619,7 @@
         </div>
     </div>
 
-    <script type="module">
+    <script>
         lucide.createIcons();
 
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
@@ -629,14 +629,14 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        window.closeMenu = function() {
+        function closeMenu() {
             mobileMenu.classList.add('hidden');
-        };
+        }
 
         let currentSlideIndex = 0;
         let isOurWorkAnimating = false;
 
-        window.scrollOurWork = function(direction) {
+        function scrollOurWork(direction) {
             if (isOurWorkAnimating) return;
             isOurWorkAnimating = true;
 
@@ -654,7 +654,7 @@
             setTimeout(() => {
                 isOurWorkAnimating = false;
             }, 700); 
-        };
+        }
 
         window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
@@ -672,7 +672,7 @@
         const userInput = document.getElementById('user-input');
         const sendBtn = document.getElementById('send-btn');
 
-        window.toggleAIModal = function() {
+        function toggleAIModal() {
             const isHidden = aiModal.classList.contains('hidden');
             
             if (isHidden) {
@@ -688,12 +688,12 @@
                     aiModal.classList.add('hidden');
                 }, 300);
             }
-        };
+        }
 
-        window.fillPrompt = function(text) {
+        function fillPrompt(text) {
             userInput.value = text;
             userInput.focus();
-        };
+        }
 
         function appendUserMessage(text) {
             const msgDiv = document.createElement('div');
@@ -740,7 +740,7 @@
             chatMessages.scrollTop = chatMessages.scrollHeight;
         }
 
-        window.handleAISubmit = async function(e) {
+        async function handleAISubmit(e) {
             e.preventDefault();
             const text = userInput.value.trim();
             if (!text) return;
@@ -750,7 +750,7 @@
             const loadingMsg = appendBotMessage('', true);
             sendBtn.disabled = true;
 
-            const apiKey=AIzaSyCIe5VYza_w1n328SRMsZXMeKJc5IRtE6Y;
+            const apiKey = "AIzaSyCIe5VYza_w1n328SRMsZXMeKJc5IRtE6Y"; 
             const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${apiKey}`;
 
             const systemPrompt = `
@@ -811,8 +811,4 @@
         }
     </script>
 </body>
-
 </html>
-
-
-
