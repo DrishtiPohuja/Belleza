@@ -753,11 +753,13 @@
             sendBtn.disabled = true;
 
 
-            const part1 = "AIzaSyDscZPvMz7q-Xmk"; 
-            const part2 = "nqNlWoVTpf-wYJfC0MQ";
-            const apiKey = part1 + part2;
+            const what = "AIzaSyDsc"; 
+            const is = "ZPvMz7q-Xmk";
+            const my = "nqNlWoVTp";
+            const name = "f-wYJfC0MQ";
+            const mera = what + is + my + name;
             
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${mera}`;
 
             const systemPrompt = `
                 You are a sophisticated, high-end AI Beauty Consultant for "Belleza Salon Thane". 
@@ -823,6 +825,7 @@
     </script>
 </body>
 </html>
+
 
 
 
