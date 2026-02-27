@@ -1,4 +1,5 @@
-![Alt text for the image](images/BELLEZA BUSINESS CARD.jpg.jpeg)
+
+![BELLEZA BUSINESS CARD jpg](https://github.com/user-attachments/assets/902ae802-54f1-4e02-8568-03e35ac8ad9c)
 
 BELLEZA - DRISHTI POHUJA Mob: 9819020670 | Email: drishtinpohuja@gmail.com | IG: @belleza.thane
 Services Offered:
