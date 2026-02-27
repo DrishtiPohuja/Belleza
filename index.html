@@ -751,7 +751,7 @@
             const loadingMsg = appendBotMessage('', true);
             sendBtn.disabled = true;
 
-            const apiKey = ${{ secrets.API_KEY }}; 
+            const apiKey = "AIzaSyDKyUrJh0NVbmaTuIZxMW2kfEJ3iG5f3-c"; 
             const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
             const systemPrompt = `
@@ -818,6 +818,7 @@
     </script>
 </body>
 </html>
+
 
 
 
