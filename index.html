@@ -750,7 +750,7 @@
             const loadingMsg = appendBotMessage('', true);
             sendBtn.disabled = true;
 
-            const apiKey = "AIzaSyBuAxO0Vn6fRAO9XAtTmbIWU60UZtBiUFo"; 
+            const apiKey = "AIzaSyATvJstXSTrALk-avtTvB6Vq2E511R_bd4"; 
             const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`;
 
             const systemPrompt = `
@@ -759,7 +759,8 @@
                 Your Persona:
                 - Professional, warm, luxurious, and knowledgeable.
                 - Use emojis sparingly but effectively (✨, 💄, 🌸).
-                - Keep responses concise (under 80 words if possible).
+                - Keep responses concise (under 60 words if possible).
+                - Answer in creative and engaging way.
 
                 Our Business Info:
                 - Founder: Drishti Pohuja (30+ years experience, Makeup Artist, Hair Artistry, Skincare Expert).
@@ -813,4 +814,5 @@
     </script>
 </body>
 </html>
+
 
