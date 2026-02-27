@@ -1,4 +1,4 @@
-![Alt text for the image](images/BELLEZA BUSINESS CARD.jpg)
+![Alt text for the image](images/BELLEZA BUSINESS CARD.jpg.jpeg)
 
 BELLEZA - DRISHTI POHUJA Mob: 9819020670 | Email: drishtinpohuja@gmail.com | IG: @belleza.thane
 Services Offered:
